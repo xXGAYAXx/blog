@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+  <route url="/admin/" module="Connexion" action="index"/>
+  <route url="/admin/deconnexion" module="Connexion" action="logout"/>
+  <route url="/admin/chapter-([0-9]+)" module="Chapter" action="show" vars="chapterNumber"/>
+  <route url="/admin/chapter-list" module="Chapter" action="index" />
+  <route url="/admin/last-chapter" module="Chapter" action="last"/>
+  <route url="/admin/chapter-insert" module="Chapter" action="insert" />
+  <route url="/admin/chapter-update-([0-9]+)-chap-([0-9]+)\.html" module="Chapter" action="update" vars="id,chapterNumber" />
+  <route url="/admin/chapter-delete-([0-9]+)\.html" module="Chapter" action="delete" vars="id" />
+  <route url="/admin/comment-delete-([0-9]+)-chap-([0-9]+)\.html" module="Chapter" action="deleteComment" vars="id,chap" />
+</routes>

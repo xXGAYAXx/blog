@@ -1,0 +1,611 @@
+@font-face
+{
+	font-family: 'Acme';
+	src: url('../polices/Acme-Regular.ttf') format("truetype");
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+ul
+{
+	margin-bottom: 0;
+}
+li
+{
+  list-style: none;
+}
+a
+{
+  text-decoration: none !important;
+}
+h1
+{
+  font-size: 3.5em;
+  text-align: center;
+  font-family: 'Acme';
+  color: darkred;
+}
+h2
+{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Acme';
+
+}
+h3
+{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Acme';
+  text-decoration: underline;
+}
+
+.row
+{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+footer
+{
+  text-align: center;
+}
+.footerList
+{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+
+}
+input, textarea
+{
+  border-radius: 5px 5px 5px 5px;
+}
+
+input:focus, textarea:focus
+{
+  border: solid 3px blue;
+}
+
+/* //////////////////// NAV ///////////////////////// */
+
+#nav-box
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+  font-family: 'Acme';
+	background-color: white;
+	height: 70px;
+}
+
+.nav-list
+{
+  display: inline-block;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 2.5em;
+}
+.nav-title
+{
+  float: left;
+}
+.nav-title a
+{
+	color: darkred;
+}
+.show-menu-btn, .hide-menu-btn
+{
+  width: 50px;
+  height: 43px;
+  background-color: black;
+  position: absolute;
+  top: 13px;
+  right: 30px;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-line
+{
+  width: 40px;
+  height: 5px;
+  margin: 7px auto;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#nav-list-box
+{
+  background-color: none;
+  text-align: center;
+}
+.banner-box
+{
+	overflow: hidden;
+}
+.banner
+{
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	-webkit-transition: all 10s;
+	-moz-transition: all 10s;
+	-o-transition: all 10s;
+	transition: all 10s;
+}
+.banner:hover
+{
+	-ms-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+.home-banner
+{
+  background-image: url('../images/elfe.jpg');
+}
+
+.index-banner
+{
+  background-image: url('../images/userPage.jpg');
+}
+
+.show-banner
+{
+  background-image: url('../images/elfe-3.jpg');
+}
+.last-banner
+{
+  background-image: url('../images/last-Bg.jpg');
+}
+.insert-banner
+{
+  background-image: url('../images/biblio.png');
+}
+
+.insert-box
+{
+  background-image: url('../images/insert-bg.jpg');
+  background-size: cover;
+  padding: 25px;
+}
+.login-banner
+{
+  background-image: url('../images/login.jpg');
+}
+
+.home-page
+{
+  padding: 50px;
+}
+.welcome
+{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+
+.preface
+{
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+  background-image: url('../images/bookPage.jpg');
+  font-size: 2em;
+}
+
+.chapter-form
+{
+  width: 90%;
+  margin: auto;
+}
+.chapter-form input
+{
+  text-align: center;
+}
+.chapter-form label
+{
+  color: black !important;
+  padding: 25px 10px;
+}
+.form-errors
+{
+  color: darkred !important;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.chapter-posted-list-box
+{
+  padding: 25px;
+  height: 80vh;
+  overflow: auto;
+  background-image: url('../images/dieu.jpg');
+  background-size: cover;
+}
+
+.chapter-not-posted-list-box
+{
+  padding: 25px;
+  height: 80vh;
+  overflow: auto;
+  background-image: url('../images/postPageBg.jpg');
+  background-size: cover;
+}
+.btn-box
+{
+	text-align: center;
+}
+.btn-primary
+{
+	padding: 5px 15px;
+	border-radius: 5px 5px 5px 5px;
+}
+.chapter-box
+{
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  background-image: url('../images/parchemin-2.png');
+  background-size: cover;
+  font-weight: bold;
+  width: 600px;
+  height: 300px;
+  margin: 50px auto;
+  border-radius: 15px 15px 15px 15px;
+}
+.chapter-title
+{
+  padding-top: 15px;
+  width: 65%;
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: darkred;
+}
+.chapter-title-frontend
+{
+  padding-top: 55px;
+  width: 65%;
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: darkred;
+}
+
+.show-chapter-Box
+{
+  width: 90%;
+  margin: 25px auto;
+  height: 80vh;
+  overflow: auto;
+  background-image: url('../images/bookPage.jpg');
+  background-size: cover;
+  font-size: 2em;
+  padding: 25px;
+}
+
+.pagination
+{
+  width: 100%;
+  text-align: center;
+}
+.last, .next
+{
+  border-radius: 5px 5px 5px 5px;
+  background-image: url('../images/bookList.jpg');
+  font-weight: bold;
+  width: 200px;
+  height: 150px;
+}
+
+.last a, .next a
+{
+  color: black;
+
+}
+
+.last p, .next p
+{
+  padding-top: 35px;
+
+}
+.last
+{
+  float: left;
+  font-family: 'Acme';
+}
+
+.next
+{
+  float: right;
+  font-family: 'Acme';
+}
+
+.signature
+{
+  text-align: center;
+  font-size: 1em;
+  padding-top: 80px;
+}
+.comment-infos
+{
+  padding-bottom: 15px;
+}
+.chap-auteur
+{
+  color: darkred;
+  font-weight: 700;
+
+}
+.synop, .chap
+{
+  padding: 20px;
+
+}
+.chap-label
+{
+  color: darkred;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Acme';
+  text-align: center;
+  font-size: 1.5em;
+}
+.commentFormBox
+{
+  width: 100%;
+  margin: auto;
+  background-image: url('../images/parchemin.jpg');
+  background-size: cover;
+  padding: 20px;
+}
+.commentFormBox label, .comment-text, .commentFormBox button
+{
+  font-size: 1.5em;
+  color: black;
+}
+
+.commentContent
+{
+  width: 80%;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.commentAutor
+{
+  width: 400px;
+  font-size: 1.5em;
+}
+
+.commentListBox
+{
+  width: 100%;
+  margin: 25px 0;
+  padding: 25px;
+  max-height: 80vh;
+  overflow: auto;
+  background-image: url('../images/comment-Bg.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.comment
+{
+  color: black;
+  font-weight: bold;
+  padding: 30px;
+  background-image: url('../images/bookPage.jpg');
+  background-size: cover;
+  margin: 25px auto;
+  width: 80%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.comment legend
+{
+  font-size: 1.5em;
+  border-bottom: solid 1px black;
+}
+.btn-box
+{
+  text-align: center;
+}
+#noCommentMsg
+{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 800;
+}
+
+.flash
+{
+  text-align: center;
+  font-size: 2.5em;
+  color: darkred;
+  font-weight: bold;;
+}
+.infosChapter p
+{
+  margin-bottom: 0;
+}
+.chap-number
+{
+  font-size: 3em;
+  padding-top: 20px;
+  font-family: 'Acme';
+}
+
+.chapter-autor
+{
+  width: 250px;
+  display: inline-block;
+}
+
+.chapter-number
+{
+  width: 100px;
+}
+
+.chapter-content
+{
+  height: 75vh;
+}
+
+.chapter-synopsis
+{
+  height: 30vh;
+}
+
+.chapter-post
+{
+  font-size: 2.5em;
+}
+.insert-box .chapter-form label
+{
+  font-size: 2em;
+  color: white;
+}
+.chapter-autor, .chapter-title, .chapter-number
+{
+  font-size: 1.8em;
+}
+
+.btn-success, .btn-danger
+{
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border-radius: 5px 5px 5px 5px;
+}
+.btn-insert
+{
+  font-size: 2em;
+}
+
+.futur-post-text
+{
+  font-size: 1.5em;
+  color: green;
+  text-align: center;
+}
+
+.page
+{
+  background-image: url('../images/insert-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 25px;
+}
+@media all and (max-width: 1100px)
+{
+	.menu-list
+	{
+		display: block;
+	}
+	.nav-title
+	{
+		float:none;
+	}
+	.show-menu-btn,.hide-menu-btn
+	{
+		position: inherit;
+		padding: 1px;
+	}
+	.nav-list
+	{
+		padding: 1px;
+	}
+
+	#nav-box
+	{
+		height: auto;
+	}
+
+	.home-page, .page
+	{
+		padding: 0 0;
+	}
+	.preface
+	{
+		width: 100%;
+	}
+
+	.chapter-title-frontend
+	{
+	  padding-top: 10px;
+		text-align: center;
+	}
+	.chapter-posted-list-box
+	{
+		padding: 0;
+	}
+	.chapter-box
+	{
+		width: 400px;
+		margin: 20px auto;
+		background-image: url('../images/parchemin-2-responsive.png');
+		height: auto;
+		background-size: auto;
+		background-repeat: no-repeat;
+		height: 200px;
+	}
+	.chap-number
+	{
+		font-size: 1.8em;
+		margin-top: 60px;
+	}
+	.show-chapter-Box
+	{
+		padding: 0;
+	}
+	.commentListBox
+	{
+		padding: 2px;
+	}
+	.comment
+	{
+		margin: 2px 0;
+		width: 100%;
+	}
+	.commentAutor, .commentContent
+	{
+		width: 100%;;
+	}
+	.next, .last
+	{
+		background-image: url('../images/bookList-responsive.jpg');
+		height: 75px;
+		width: 100px;
+	}
+	.next p, .last p
+	{
+		padding-top: 5px;
+		font-size: 0.8em;
+	}
+	.banner
+	{
+		height: 60px;
+	}
+}
+.loginFormBox
+{
+	width: 150px;
+	margin: auto;
+}
+p
+{
+	margin: 0 0 0 0;
+}

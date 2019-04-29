@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<definitions>
+  <define var="login" value="admin" />
+  <define var="pass" value="100063012dbadcfd374f9d01dcafdbf228b53319" />
+  <define var="nombre_contacts" value="10" />
+  <define var="newsPerPage" value="10" />
+</definitions>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+  <route url="/" module="Chapter" action="home"/>
+  <route url="/chapter-list" module="Chapter" action="index"/>
+  <route url="/last-chapter" module="Chapter" action="lastPosted"/>
+  <route url="/chapter-([0-9]+)" module="Chapter" action="show" vars="chapterNumber"/>
+  <route url="/admin/" module="Connexion" action="login"/>
+</routes>
